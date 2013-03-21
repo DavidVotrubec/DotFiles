@@ -1,0 +1,34 @@
+[alias]
+  st = number
+  d = number diff
+  n = number
+  na = number add
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+
+[core]
+  editor = notepad
+[user]
+	email = votrubec.d@st-software.com
+	name = David Votrubec
+
+[color]
+  branch = auto
+  interactive = auto
+  diff = auto
+  status = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
