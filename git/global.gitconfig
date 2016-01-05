@@ -1,0 +1,5 @@
+[user]
+	email = david.votrubec@gmail.com
+	name = David Votrubec
+[credential]
+	helper = wincred
