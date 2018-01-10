@@ -4,9 +4,10 @@
   n = number
   na = number add
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  spull = "!__git_spull() { git pull \"$@\" && git submodule sync --recursive && git submodule update --init --recursive; }; __git_spull"
 
 [core]
-  editor = notepad
+  editor = notepad2
 [user]
 	email = votrubec.d@st-software.com
 	name = David Votrubec
