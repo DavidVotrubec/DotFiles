@@ -1,0 +1,10 @@
+comcast=docker run --rm --pid=host --privileged -v //var/run/docker.sock:/var/run/docker.sock dockerinpractice/comcast
+xixorm=docker rm -f xixo-web-container
+xixobuild=docker build -t xixo-web .
+xixorun=docker run -d --name xixo-web-container -v c:\src\topmonks\xixoio-web:/usr/src/app:rw -v /usr/src/app/node_modules -p 4200:4200 xixo-web
+xixostop=docker stop xixo-web-container
+xixologs=docker logs xixo-web-container 
+xixoit=docker exec -it xixo-web-container /bin/bash
+ganache-net=docker network create ganache-net
+dzos=docker run -v %cd%/:/usr/src/app -h 0.0.0.0 --net ganache-net zos $*
+docker-ganache-cli=docker run -p 8545:8545 -h 0.0.0.0 --net ganache-net trufflesuite/ganache-cli:latest 
