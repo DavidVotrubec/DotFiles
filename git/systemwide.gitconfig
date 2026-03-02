@@ -1,22 +1,11 @@
 [core]
-	symlinks = false
-	autocrlf = true
+ 	autocrlf = input
 	fscache = true
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 	interactive = true
-[pack]
-[help]
-	format = html
-[http]
-	sslCAInfo = F:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
-[sendemail]
-	smtpserver = /bin/msmtp.exe
-
-[diff "astextplain"]
-	textconv = astextplain
 [rebase]
 	autosquash = true
 [alias]
